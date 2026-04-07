@@ -28,9 +28,9 @@ const Footer = () => {
           <div className="footer-col about">
             <h4 className="footer-title">ABOUT COMPANY</h4>
             <div className="footer-line"><span></span></div>
-            <div className="footer-logo">GK <span>CONSTRUCTION</span></div>
+            <div className="footer-logo">Hi-Tech <span>CONSTRUCTION</span></div>
             <p>
-              GK Construction stands for strength, reliability, and innovation. 
+              Hi-Tech Construction stands for strength, reliability, and innovation. 
               We build lasting structures, deliver quality projects on time, 
               and create trust for communities across India.
             </p>
@@ -110,7 +110,7 @@ const Footer = () => {
 
       {/* 4. COPYRIGHT BAR */}
       <div className="copyright-bar">
-        <p>© 2026 GK Construction India. All Rights Reserved. Powered by <span>GKC</span></p>
+        <p>© 2026 Hi-Tech Construction India. All Rights Reserved. Powered by <span>Hi-TechC</span></p>
       </div>
       <div className="hazard-strip"></div>
     </footer>

@@ -5,7 +5,7 @@ const Services = () => {
   const servicesData = [
     {
       title: "Ash Dyke Construction",
-      description: "GK Construction is a leader in the engineering and construction of Ash Dykes and Lagoons. With a track record of completing over 185 sites, we specialize in Earthwork, Earth retention, and structural lining that ensures environmental safety and long-term durability for power plants.",
+      description: "Hi-Tech Construction is a leader in the engineering and construction of Ash Dykes and Lagoons. With a track record of completing over 185 sites, we specialize in Earthwork, Earth retention, and structural lining that ensures environmental safety and long-term durability for power plants.",
       whyUs: "Our expertise in soil stabilization and specialized lining techniques makes us the preferred partner for major clients like NTPC and Vedanta.",
       img1: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800",
       img2: "https://images.unsplash.com/photo-1590486803833-ffc475d2745a?q=80&w=800"
@@ -37,7 +37,7 @@ const Services = () => {
               <h2 className="service-title">{service.title}</h2>
               <p className="service-description">{service.description}</p>
               <div className="why-us-box">
-                <h4>Why Choose GK For This?</h4>
+                <h4>Why Choose Hi-Tech For This?</h4>
                 <p style={{color: '#14213d'}}>{service.whyUs}</p>
               </div>
             </div>

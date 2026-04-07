@@ -11,7 +11,7 @@ const Home = () => {
     {
       url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070",
       title: "SOLUTIONS FOR CONSTRUCTION",
-      subtitle: "WELCOME TO GK CONSTRUCTION"
+      subtitle: "WELCOME TO Hi-Tech CONSTRUCTION"
     },
     {
       url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070",
@@ -30,7 +30,7 @@ const Home = () => {
   const projects = [
     {
       title: "DAHEJ MANUFACTURING SYSTEM",
-      desc: "State-of-the-art manufacturing Aneja Constructions India Private Limited construction in Dahej, Gujarat with advanced infrastructure and utilities.",
+      desc: "State-of-the-art manufacturing Hi-Tech Constructions India Private Limited construction in Dahej, Gujarat with advanced infrastructure and utilities.",
       img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800"
     },
     {
@@ -249,11 +249,11 @@ const Home = () => {
         <div className="faq-container">
             <h3>Frequently Asked Questions</h3>
             <div className="faq-item active">
-            <div className="faq-question">WHEN WAS ACIPL FOUNDED? <Minus /></div>
-            <div className="faq-answer" >ACIPL was founded on 16/10/1995 with a vision for quality construction.</div>
+            <div className="faq-question">WHEN WAS Hi-Tech FOUNDED? <Minus /></div>
+            <div className="faq-answer" >Hi-Tech was founded on 16/10/1995 with a vision for quality construction.</div>
             </div>
             <div className="faq-item active">
-            <div className="faq-question">WHAT DOES ACIPL OFFER? <Plus /></div>
+            <div className="faq-question">WHAT DOES Hi-Tech OFFER? <Plus /></div>
             </div>
         </div>
         
@@ -284,7 +284,7 @@ const Home = () => {
                 <span className="line"></span>
                 </div>
                 <p className="section-subtitle" style={{color: "#ff6b00"}}>
-                At ACIPL, every project we deliver stands as a symbol of trust, quality, and engineering excellence.
+                At Hi-Tech, every project we deliver stands as a symbol of trust, quality, and engineering excellence.
                 </p>
             </div>
 
@@ -334,7 +334,7 @@ const Home = () => {
             {/* Testimonial 1 */}
             <div className="testi-card">
             <Quote className="quote-icon" />
-            <p>ACIPL delivered excellent quality work within the required time and budget. Their team is professional, highly skilled, and committed to client satisfaction.</p>
+            <p>Hi-Tech delivered excellent quality work within the required time and budget. Their team is professional, highly skilled, and committed to client satisfaction.</p>
             <h5>Mr. Prakashchandra M. Prajapati</h5>
             <span>Deputy Manager | Elecon Engineering Company Ltd.</span>
             </div>
@@ -342,7 +342,7 @@ const Home = () => {
             {/* Testimonial 2 */}
             <div className="testi-card">
             <Quote className="quote-icon" />
-            <p>ACIPL is highly reliable and efficient. They maintain excellent workmanship, timely completion, and keep great communication throughout the project lifecycle.</p>
+            <p>Hi-Tech is highly reliable and efficient. They maintain excellent workmanship, timely completion, and keep great communication throughout the project lifecycle.</p>
             <h5>Mr. Mithilesh Kumar</h5>
             <span>Project Head (Civil) | GE Power India Limited</span>
             </div>

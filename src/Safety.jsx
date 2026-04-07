@@ -33,7 +33,7 @@ const Safety = () => {
       {/* HSE POLICY SECTION */}
       <section className="hse-policy-section">
         <div className="policy-box">
-          <h2>Aneja Constructions India Private Limited HSE POLICY</h2>
+          <h2>Hi-Tech Constructions India Private Limited HSE POLICY</h2>
           <p style={{color:"#14213d"}}>Our HSE Policy is project oriented. We strive to achieve and meet HSE requirements of our clients in both Public as well as Private sectors during project implementation.</p>
           <div className="achievement-highlight">
              <ShieldCheck color="#FF6B00" size={40} />
@@ -67,7 +67,7 @@ const Safety = () => {
              <div className="safety-first-badge">SAFETY FIRST</div>
           </div>
           <div className="iso-text">
-            <p style={{color:"#14213d"}}>Aneja Constructions India Private Limited has adopted ISO 45001:2018 standards for International Organisation for Standardisation.</p>
+            <p style={{color:"#14213d"}}>Hi-Tech Constructions India Private Limited has adopted ISO 45001:2018 standards for International Organisation for Standardisation.</p>
             <p style={{color:"#14213d"}}>ISO 45001 provides organizations with a framework to manage risks, reduce workplace accidents, and demonstrate compliance with international safety standards.</p>
           </div>
         </div>

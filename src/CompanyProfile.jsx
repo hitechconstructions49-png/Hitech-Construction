@@ -32,7 +32,7 @@ const CompanyProfile = () => {
           </section>
 
           <section className="company-info">
-            <h2>Aneja Constructions India Private Limited</h2>
+            <h2>Hi-Tech Constructions India Private Limited</h2>
             <p>
               One of the fastest growing companies in the field of Engineering of Ash Dyke, construction of Civil work, 
               Pilling, Ash handling plants, Earthwork, Earth retention, having Registered Office at New Delhi 
