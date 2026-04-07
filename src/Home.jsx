@@ -77,10 +77,7 @@ const Home = () => {
                 <span className="highlight">{slides[currentSlide].title.split(' ').slice(1).join(' ')}</span>
             </h1>
             <p>Specialized in Damp Proofing, Concrete Admixtures, and Waterproofing Systems.</p>
-            <div className="hero-btns">
-              <button className="btn-solid" onClick={() => navigate('/services')}>Read More</button>
-              <button className="btn-outline" onClick={() => navigate('/contact')}>Contact Us</button>
-            </div>
+      
             <div className="slide-dots">
               {slides.map((_, index) => (
                 <span key={index} className={`dot ${index === currentSlide ? 'active' : ''}`} onClick={() => setCurrentSlide(index)}></span>
