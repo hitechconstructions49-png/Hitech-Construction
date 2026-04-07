@@ -1,5 +1,5 @@
 {
-  "name": "Hi-Tech_construction",
+  "name": "hi-tech_construction",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
+    "start": "vite",
+    "test": "vitest"
   },
   "dependencies": {
     "lucide-react": "^0.576.0",
