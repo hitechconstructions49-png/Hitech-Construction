@@ -78,8 +78,8 @@ const Home = () => {
             </h1>
             <p>Specialized in Damp Proofing, Concrete Admixtures, and Waterproofing Systems.</p>
             <div className="hero-btns">
-              <button className="btn-solid">Read More</button>
-              <button className="btn-outline">Contact Us</button>
+              <button className="btn-solid" onClick={() => navigate('/services')}>Read More</button>
+              <button className="btn-outline" onClick={() => navigate('/contact')}>Contact Us</button>
             </div>
             <div className="slide-dots">
               {slides.map((_, index) => (
