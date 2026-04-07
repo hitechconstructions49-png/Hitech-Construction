@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* <div className="logo">Hi-Tech <span>CONSTRUCTION</span></div> */}
-      <img src="./public/logo.png" alt="Hi-Tech Construction Logo" className="logo" />
+      <img src="./public/Logo.png" alt="Hi-Tech Construction Logo" className="logo" />
       
       <div className="nav-menu">
         <Link to="/">Home</Link>
