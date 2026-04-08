@@ -279,7 +279,7 @@ img { max-width: 100%; display: block; }
 .profile-sidebar h3 { color: var(--oxford-blue); margin-bottom: 30px; text-align: center; text-transform: uppercase; }
 .cert-list { display: flex; flex-direction: column; gap: 30px; }
 .cert-card { text-align: center; background: white; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-.cert-card img { width: 120px; margin: 0 auto 15px; }
+.cert-card img { width: 151px; margin: 0 auto 15px; }
 .cert-card p { font-size: 0.85rem; font-weight: 700; color: var(--oxford-blue); }
 
 /* =====================
