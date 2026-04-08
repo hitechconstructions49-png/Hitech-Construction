@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hi-Tech Construction India</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+<!-- ========================
+     NAVBAR
+     ======================== -->
+<nav class="navbar">
+<img src="/logo.png" alt="Hi-Tech Construction company logo displaying the text Hi-Tech Construction in a professional design, symbolizing reliability and innovation in construction services" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" />
+  <div style="display:none; font-weight:900; font-size:1.5rem; color:#14213d;">Hi-Tech <span style="color:#FF6B00">CONSTRUCTION</span></div>
+
+  <div class="nav-menu" id="navMenu">
+    <a href="#" onclick="showPage('home')">Home</a>
+
+    <div class="nav-item-dropdown">
+      <button class="dropdown-btn">
+        Company Profile <svg data-lucide="chevron-down" width="14" height="14"></svg>
+      </button>
+      <div class="dropdown-content">
+        <a href="#" onclick="showPage('profile')">Company Profile</a>
+        <a href="#" onclick="showPage('equipment')">Equipment</a>
+      </div>
+    </div>
+
+    <div class="nav-item-dropdown">
+      <button class="dropdown-btn">
+        Projects <svg data-lucide="chevron-down" width="14" height="14"></svg>
+      </button>
+      <div class="dropdown-content">
+        <a href="#" onclick="showPage('current-projects')">Projects</a>
+      </div>
+    </div>
+
+    <a href="#" onclick="showPage('services')">Services</a>
+    <a href="#" onclick="showPage('clients')">Clients</a>
+    <a href="#" onclick="showPage('safety')">Safety</a>
+    <a href="#" onclick="showPage('contact')">Contact</a>
+  </div>
+
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ========================
+     HOME PAGE
+     ======================== -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <header class="hero-section" id="heroSection">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <span class="subtitle" id="heroSubtitle">WELCOME TO Hi-Tech CONSTRUCTION</span>
+        <h1 id="heroTitle">SOLUTIONS FOR <br/><span class="highlight">CONSTRUCTION</span></h1>
+        <p>Specialized in Ash Dyke Construction, Piling, Civil Works & Industrial Infrastructure.</p>
+        <div class="slide-dots" id="slideDots"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MISSION & VISION -->
+  <section class="mission-vision-section">
+    <div class="section-header">
+      <h2 style="color:#14213d">OUR MISSION AND VISION</h2>
+      <div class="decorative-line">
+        <span class="line"></span><span class="square"></span><span class="line"></span>
+      </div>
+    </div>
+    <div class="mission-vision-grid">
+      <div class="mv-card">
+        <h3 style="color:#ff6b00">Our Mission</h3>
+        <p>Providing superior-quality construction services that exceed client expectations through safety, sustainability, and innovation.</p>
+      </div>
+      <div class="mv-card">
+        <h3 style="color:#ff6b00">Our Vision</h3>
+        <p>To be the leading construction company recognized for innovation and integrity, shaping the future of modern infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose-us">
+    <div class="section-header">
+      <h2 style="color:#14213d">WHY CHOOSE US</h2>
+      <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+    </div>
+    <div class="choices-grid">
+      <div class="choice-card">
+        <svg data-lucide="award" class="choice-icon"></svg>
+        <h3>BEST QUALITY</h3><p>Excellence in every project.</p>
+      </div>
+      <div class="choice-card">
+        <svg data-lucide="target" class="choice-icon"></svg>
+        <h3>INTEGRITY</h3><p>Guided by honesty and ethics.</p>
+      </div>
+      <div class="choice-card">
+        <svg data-lucide="shield" class="choice-icon"></svg>
+        <h3>STRATEGY</h3><p>Smart solutions for optimal results.</p>
+      </div>
+      <div class="choice-card">
+        <svg data-lucide="hard-hat" class="choice-icon"></svg>
+        <h3>SAFETY</h3><p>Your security is our priority.</p>
+      </div>
+      <div class="choice-card">
+        <svg data-lucide="users" class="choice-icon"></svg>
+        <h3>COMMUNITY</h3><p>Positive impact on society.</p>
+      </div>
+      <div class="choice-card">
+        <svg data-lucide="leaf" class="choice-icon"></svg>
+        <h3>SUSTAINABILITY</h3><p>Eco-friendly future development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTS -->
+  <section class="facts-section">
+    <div class="facts-overlay">
+      <div class="section-header" style="background:transparent; padding-top:0;">
+        <h2 style="color:#eee">AWESOME FACTS</h2>
+        <div class="decorative-line"><span class="line"></span><span class="square" style="border-color:#fff"></span><span class="line"></span></div>
+        <p style="color:#ff6b00; margin-top:10px;">Our dedication has built a strong workforce and a history of success.</p>
+      </div>
+      <div class="facts-grid">
+        <div class="fact-item">
+          <div class="fact-icon-circle"><svg data-lucide="hard-hat"></svg></div>
+          <div class="fact-info"><span class="count">185+</span><p>PROJECTS COMPLETED</p></div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-icon-circle"><svg data-lucide="users"></svg></div>
+          <div class="fact-info"><span class="count">185+</span><p>HAPPY CLIENTS</p></div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-icon-circle"><svg data-lucide="users"></svg></div>
+          <div class="fact-info"><span class="count">1000+</span><p>WORKERS EMPLOYED</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ & MARKET -->
+  <section class="faq-market-section">
+    <div class="faq-container">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item open" onclick="toggleFaq(this)">
+        <div class="faq-question">WHEN WAS Hi-Tech FOUNDED? <span>−</span></div>
+        <div class="faq-answer">Hi-Tech was founded on 16/10/1995 with a vision for quality construction.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">WHAT DOES Hi-Tech OFFER? <span>+</span></div>
+        <div class="faq-answer">Hi-Tech offers Ash Dyke construction, piling works, civil construction, earth retention, and ash handling plant services across India.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">HOW MANY SITES HAS Hi-Tech COMPLETED? <span>+</span></div>
+        <div class="faq-answer">Over 185 sites across 30 years of operation with major clients like NTPC, Vedanta, and Tata Steel.</div>
+      </div>
+    </div>
+    <div class="market-sectors">
+      <h3>Market Sectors</h3>
+      <div class="sector-bar">
+        <div class="sector-info"><span>Industrial</span><span>95%</span></div>
+        <div class="progress-bg"><div class="progress-fill" style="width:95%"></div></div>
+      </div>
+      <div class="sector-bar">
+        <div class="sector-info"><span>Refinery</span><span>85%</span></div>
+        <div class="progress-bg"><div class="progress-fill" style="width:85%"></div></div>
+      </div>
+      <div class="sector-bar">
+        <div class="sector-info"><span>Power Plant</span><span>90%</span></div>
+        <div class="progress-bg"><div class="progress-fill" style="width:90%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT PROJECTS SLIDER -->
+  <section class="recent-projects">
+    <div class="section-header" style="background:transparent; padding-top:0;">
+      <h2 style="color:#eee">OUR RECENT COMPLETED PROJECTS</h2>
+      <div class="decorative-line"><span class="line"></span><span class="square" style="border-color:#fff"></span><span class="line"></span></div>
+      <p class="section-subtitle" style="color: #eee;">At Hi-Tech, every project stands as a symbol of trust, quality, and engineering excellence.</p>
+    </div>
+    <div class="project-slider-wrapper">
+      <div class="project-track" id="projectTrack">
+        <div class="project-card">
+          <div class="project-img-container"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800" alt="Dahej" /></div>
+          <div class="project-content"><h3>DAHEJ MANUFACTURING SYSTEM</h3><p>State-of-the-art manufacturing and construction in Dahej, Gujarat with advanced infrastructure and utilities.</p></div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800" alt="FGD" /></div>
+          <div class="project-content"><h3>FGD CIVIL CONSTRUCTION</h3><p>FGD Package for Civil work and Pilling Work for NTPC Mauda Super Thermal Power Plant (2*660MW).</p></div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container"><img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ecb?q=80&w=800" alt="Piling" /></div>
+          <div class="project-content"><h3>PILING WORK CONSTRUCTION</h3><p>Piling work for NTPC Farakka Project super thermal power station (3x200mw, 2x500mw & 1x500mw), FGD Package.</p></div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container"><img src="https://images.unsplash.com/photo-1590486803833-ffc475d2745a?q=80&w=800" alt="Ash Pond" /></div>
+          <div class="project-content"><h3>DIVIDE BUND AT ASH POND</h3><p>Construction of Divide Bund at Ash Pond, Talwandi Sabo Power Limited, Mansa, Punjab.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-nav">
+      <button class="nav-btn" onclick="prevProject()"><svg data-lucide="chevron-left"></svg></button>
+      <button class="nav-btn" onclick="nextProject()"><svg data-lucide="chevron-right"></svg></button>
+    </div>
+    <div class="slider-dots" id="projectDots">
+      <span class="dot active" onclick="goToProject(0)"></span>
+      <span class="dot" onclick="goToProject(1)"></span>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="section-header" style="background:#eee;">
+      <h2 style="color:#14213d">WHAT OUR CLIENTS SAY</h2>
+      <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testi-card">
+        <svg data-lucide="quote" class="quote-icon"></svg>
+        <p>Hi-Tech delivered excellent quality work within the required time and budget. Their team is professional, highly skilled, and committed to client satisfaction.</p>
+        <h5>Mr. Prakashchandra M. Prajapati</h5>
+        <span>Deputy Manager | Elecon Engineering Company Ltd.</span>
+      </div>
+      <div class="testi-card">
+        <svg data-lucide="quote" class="quote-icon"></svg>
+        <p>Hi-Tech is highly reliable and efficient. They maintain excellent workmanship, timely completion, and keep great communication throughout the project lifecycle.</p>
+        <h5>Mr. Mithilesh Kumar</h5>
+        <span>Project Head (Civil) | GE Power India Limited</span>
+      </div>
+      <div class="testi-card">
+        <svg data-lucide="quote" class="quote-icon"></svg>
+        <p>A pioneer construction company for works of schedule with quality and safety. We are pleased with their technical expertise and T&amp;P to ensure end delivery.</p>
+        <h5>Mr. Heera Ram Chaudhary</h5>
+        <span>AGM | National Thermal Power Corporation (NTPC)</span>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end page-home -->
+
+<!-- ========================
+     COMPANY PROFILE PAGE
+     ======================== -->
+<div id="page-profile" class="page">
+  <section class="profile-header">
+    <h1>Company Profile</h1>
+  </section>
+  <div class="profile-container">
+    <div class="profile-text-content">
+      <section class="md-desk">
+        <h2>Our Founders</h2>
+        <div class="decorative-line-left"><span class="square"></span><span class="line"></span></div>
+        <p>Hitech Construction is a blend of young and experienced generation with one Director as <strong> Mr. Ashok Kumar</strong> having a vast experience of 40 years as a Civil Contractor and <strong> Mr. Govil Singla</strong>, graduated from National Institute of Technology, Kurukshetra, with 16 years of new-era construction technology experience.</p>
+        <p><strong>Our Mission is to achieve work with Safety First.</strong></p>
+      </section>
+      <section class="company-info">
+        <h2>Hi-Tech Constructions India Private Limited</h2>
+        <p>We are well known in this industry for our timely delivery of assigned projects while maintaining strict quality control standards. We have emerged as a fully developed, independent, and cost-effective construction company.</p>
+        <p>We have a strong presence in North India, especially in high end Warehouse, Industrial Commercial Construction Projects. Our priority is to provide the best quality at the most affordable price to our clients. We have successfully delivered more than 30 lakh square feet ofIndustrial space to our esteemed clients in the region.</p>
+      </section>
+    </div>
+    <div class="profile-sidebar">
+      <h3>Our Certifications</h3>
+      <div class="cert-list">
+        <div class="cert-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/ISO_9001-2015.png" alt="ISO 9001" />
+          <p>ISO 9001:2015 Quality Management System</p>
+        </div>
+        <div class="cert-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/ISO_45001_Logo.png" alt="ISO 45001" />
+          <p>ISO 45001:2018 Occupational Health &amp; Safety</p>
+        </div>
+        <div class="cert-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/ISO_14001_Logo.png" alt="ISO 14001" />
+          <p>ISO 14001:2015 Environmental Management</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================
+     EQUIPMENT PAGE
+     ======================== -->
+<div id="page-equipment" class="page">
+  <section class="profile-header">
+    <h1>Our Equipments</h1>
+    <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+  </section>
+  <div class="table-container">
+    <table class="equipment-table">
+      <thead>
+        <tr><th>Sr.No</th><th>Particulars</th><th>Nos.</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td class="particulars-cell">JCB</td><td class="nos-cell">6</td></tr>
+        <tr><td>2</td><td class="particulars-cell">VIBRO ROLLERS</td><td class="nos-cell">4</td></tr>
+        <tr><td>3</td><td class="particulars-cell">AJAX FIORI</td><td class="nos-cell">16</td></tr>
+        <tr><td>4</td><td class="particulars-cell">LASER SCREED</td><td class="nos-cell">6</td></tr>
+        <tr><td>5</td><td class="particulars-cell">TRUSS SCREED</td><td class="nos-cell">5</td></tr>
+        <tr><td>6</td><td class="particulars-cell">RIDE ON TROWELS </td><td class="nos-cell">2</td></tr>
+        <tr><td>7</td><td class="particulars-cell">VACUUM DEWATERED</td><td class="nos-cell">15</td></tr>
+        <tr><td>8</td><td class="particulars-cell">CONCRETE BREAKERS</td><td class="nos-cell">10</td></tr>
+        <tr><td>9</td><td class="particulars-cell">AUTO LEVELLERS</td><td class="nos-cell">25</td></tr>
+        <tr><td>10</td><td class="particulars-cell"> LASER LEVELLERS</td><td class="nos-cell">8</td></tr>
+        <tr><td>11</td><td class="particulars-cell">GENSET( 15 KVA)</td><td class="nos-cell">6</td></tr>
+        <tr><td>12</td><td class="particulars-cell">AIR COMPRESSOR</td><td class="nos-cell">2</td></tr>
+        <tr><td>13</td><td class="particulars-cell"> SOIL COMPACTORS</td><td class="nos-cell">8</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ========================
+     AWARDS PAGE
+     ======================== -->
+<div id="page-awards" class="page">
+  <section class="profile-header">
+    <h1>Awards &amp; Certificates</h1>
+    <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+  </section>
+  <div class="awards-container">
+    <div class="awards-grid">
+      <div class="award-card">
+        <div class="award-img-wrapper"><img src="https://images.unsplash.com/photo-1579541814924-49fef17c5be5?q=80&w=500" alt="Vedanta Award" /></div>
+        <p class="award-caption">Vedanta Award</p>
+      </div>
+      <div class="award-card">
+        <div class="award-img-wrapper"><img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?q=80&w=500" alt="NTPC" /></div>
+        <p class="award-caption">Letter of Appreciation From NTPC</p>
+      </div>
+      <div class="award-card">
+        <div class="award-img-wrapper"><img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=500" alt="Tata Steel" /></div>
+        <p class="award-caption">Tata Steel Long Certificate</p>
+      </div>
+      <div class="award-card">
+        <div class="award-img-wrapper"><img src="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=500" alt="Employee" /></div>
+        <p class="award-caption">Employee of the Year</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================
+     VIDEOS PAGE
+     ======================== -->
+<div id="page-videos" class="page videos-page-bg">
+  <section class="profile-header" style="background:#eee;">
+    <h1 style="color:#14213d">Our Project Videos</h1>
+    <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+  </section>
+  <div class="videos-container">
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Dahej Manufacturing Site" frameborder="0" allowfullscreen></iframe></div>
+        <div style="background:#1a1a1a; padding:20px;"><h3 style="color:#FF6B00; font-size:1.1rem; margin:0;">Dahej Manufacturing Site</h3></div>
+      </div>
+      <div class="video-card">
+        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/vAnVl0id3_E" title="FGD Civil Construction" frameborder="0" allowfullscreen></iframe></div>
+        <div style="background:#1a1a1a; padding:20px;"><h3 style="color:#FF6B00; font-size:1.1rem; margin:0;">FGD Civil Construction</h3></div>
+      </div>
+      <div class="video-card">
+        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/5F2v_2Y_j-k" title="Piling Work Demo" frameborder="0" allowfullscreen></iframe></div>
+        <div style="background:#1a1a1a; padding:20px;"><h3 style="color:#FF6B00; font-size:1.1rem; margin:0;">Piling Work Demo</h3></div>
+      </div>
+      <div class="video-card">
+        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Ash Handling System" frameborder="0" allowfullscreen></iframe></div>
+        <div style="background:#1a1a1a; padding:20px;"><h3 style="color:#FF6B00; font-size:1.1rem; margin:0;">Ash Handling System</h3></div>
+      </div>
+      <div class="video-card">
+        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/vAnVl0id3_E" title="Safety Protocol Overview" frameborder="0" allowfullscreen></iframe></div>
+        <div style="background:#1a1a1a; padding:20px;"><h3 style="color:#FF6B00; font-size:1.1rem; margin:0;">Safety Protocol Overview</h3></div>
+      </div>
+      <div class="video-card">
+        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Project Site Progress" frameborder="0" allowfullscreen></iframe></div>
+        <div style="background:#1a1a1a; padding:20px;"><h3 style="color:#FF6B00; font-size:1.1rem; margin:0;">Project Site Progress</h3></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================
+     CURRENT PROJECTS PAGE
+     ======================== -->
+<div id="page-current-projects" class="page">
+  <section class="profile-header" style="background:#eee;">
+    <h1 style="color:#14213d; padding-top:30px;">Projects</h1>
+    <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+  </section>
+  <div class="table-container">
+    <table class="industrial-table">
+      <thead>
+        <tr><th>Work Details</th><th>Amount (Lakh)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="work-details-cell">Warehouse facility for NYK , rigid pavement of 2 lakh Sqft area , Patli - Gurgaon</td>
+          <td class="amount-cell">₹ 9,50,00,000</td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Warehouse facility for seabird marine services at Palwal – 2.5 Lakh Sqft -Palwal</td>
+          <td class="amount-cell">₹ 12,25,00,000</td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">132 KVA solar farm work at Netramali – Ahmedabad for Azure Power Solutions</td>
+          <td class="amount-cell">₹ 5,35,00,000</td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Warehouse facility for HUL 2.75 Lakh Sqft at Banur location Rajpura</td>
+          <td class="amount-cell">₹ 15,65,00,000</td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Warehouse facility for Shubham chemicals 2.5 lakh Sqft at Chamaru Punjab</td>
+          <td class="amount-cell">₹ 9,35,00,000</td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Industrial building for Décor Asia of 1 lakh Sqft in complete RCC at Ghaziabad</td>
+          <td class="amount-cell">₹ 15,45,00,000</td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Warehouse facility for Pareekh Group – Palwal 3.5 lakh sqft</td>
+          <td class="amount-cell">₹ 14,35,00,000</td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Accomodation for holtel and farm staff at Vantara - Jamnagar</td>
+          <td class="amount-cell">₹ 8,35,00,000</td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Industrial facility of 12 lakh sqft for VST Motors – Kotputli Rajasthan</td>
+          <td class="amount-cell">₹ 23,00,00,000</td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Independent Builder floors at sector 44 Chandigarh</td>
+          <td class="amount-cell">₹ 8,50,00,000</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ========================
+     COMPLETED PROJECTS PAGE
+     ======================== -->
+<div id="page-completed-projects" class="page">
+  <section class="profile-header" style="background:#eee;">
+    <h1 style="color:#14213d; padding-top:30px;">Completed Projects</h1>
+    <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+  </section>
+  <div class="table-container">
+    <table class="industrial-table">
+      <thead>
+        <tr><th>Work Details</th><th>Clients</th><th>Amount (Lakh)</th><th>Start Date</th><th>Completion</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="work-details-cell">Engineering and Construction of Siriapalli Ash Pond – Lagoon, Jharusuguda</td>
+          <td class="client-cell"><span class="client-tag">Vedanta</span></td>
+          <td class="amount-cell">₹ 11500</td><td>14/05/2025</td><td>14/05/2027</td>
+          <td><span class="status-badge completed">Completed</span></td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Wagon tippler Civil work for the Bauxite Handling Plant required for 5MTPA at Vedanta Limited Lanjgarh Odisha.</td>
+          <td class="client-cell"><span class="client-tag">Vedanta</span></td>
+          <td class="amount-cell">₹ 15151</td><td>30/10/2022</td><td>31/03/2026</td>
+          <td><span class="status-badge completed">Completed</span></td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Pilling work for NTPC Farakka Project super thermal power station (3x200mw, 2x500mw & 1x500mw), FGD Package</td>
+          <td class="client-cell"><span class="client-tag">MPW</span></td>
+          <td class="amount-cell">₹ 4685</td><td>22/02/2025</td><td>30/04/2026</td>
+          <td><span class="status-badge completed">Completed</span></td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">FGD Package for Civil work and Pilling Work for NTPC Mauda Super Thermal Power Plant (2*660MW)</td>
+          <td class="client-cell"><span class="client-tag">MHPS (Mitsubishi)</span></td>
+          <td class="amount-cell">₹ 7453</td><td>19/02/2019</td><td>31/03/2026</td>
+          <td><span class="status-badge completed">Completed</span></td>
+        </tr>
+        <tr>
+          <td class="work-details-cell">Constructions of Ash divide bund for Solapur – Lagoon -1, 2 and 3, NTPC Solapur</td>
+          <td class="client-cell"><span class="client-tag">NTPC</span></td>
+          <td class="amount-cell">₹ 1715</td><td>01/06/21</td><td>31/05/26</td>
+          <td><span class="status-badge completed">Completed</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ========================
+     SERVICES PAGE
+     ======================== -->
+<div id="page-services" class="page">
+  <section class="profile-header" style="background:#eee;">
+    <h1 style="color:#14213d">Our Specialized Services</h1>
+    <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+  </section>
+  <div class="services-list">
+    <div class="service-item">
+      <div class="service-text">
+        <h2 class="service-title">What We Do</h2>
+        <p class="service-description">We are equipped with the latest machinery, tools, and equipment to deliver best-in-class solutions. We have an experienced team of eminent and distinguished engineers, innovative and resourceful professionals, competent workmen, and highly skilled laborers to ensure superior workmanship and desired results.</p>
+        <p class="service-description">Our commitment to building trustworthy relationships and being innovative leaders has significantly contributed to our company’s growth and reputation. </p>
+        <p class="service-description">Hitech Construction will provide the desired support to our associates so that they can constantly enhance quality of their work and in turn, archive corporate objectives.</p>
+      </div>
+      <div class="service-images">
+        <div class="img-frame primary-img"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800" alt="Ash Dyke" /></div>
+      </div>
+    </div>
+    <div class="service-item reverse">
+      <div class="service-text">
+        <h2 class="service-title">Our Services</h2>
+        <p class="service-description">Project Management Consultancy <br> Warehouse Construction <br> Industrial Infrastructure <br> Residential Infrastructure <br> Commercial Infrastructure <br> Industrial Floors <br> Concrete Roads & Pavements</p>
+      </div>
+      <div class="service-images">
+        <div class="img-frame primary-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800" alt="Piling" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================
+     CLIENTS PAGE
+     ======================== -->
+<div id="page-clients" class="page">
+  <section class="profile-header" style="background:#eee;">
+    <h1 style="color:#14213d">Our Major Clients</h1>
+    <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+    <p class="section-subtitle">We proudly collaborate with leading developers, businesses, and public agencies.</p>
+  </section>
+
+  <section class="full-client-list">
+    <div class="list-container">
+      <div class="client-column-grid" id="clientGrid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ========================
+     SAFETY PAGE
+     ======================== -->
+<div id="page-safety" class="page">
+  <section class="profile-header" style="background:#eee;">
+    <h1 style="color:#14213d">Health, Safety &amp; Environment (HSE)</h1>
+    <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+  </section>
+
+  <section class="safety-gallery">
+    <div class="safety-grid">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600" alt="Mass Meeting" />
+      <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600" alt="Site Safety" />
+      <img src="https://images.unsplash.com/photo-1503387762-592dea58ef21?q=80&w=600" alt="PPE Inspection" />
+    </div>
+  </section>
+
+  <section class="hse-policy-section">
+    <div class="policy-box">
+      <h2>Hi-Tech Constructions India Private Limited HSE POLICY</h2>
+      <p>Our HSE Policy is project oriented. We strive to achieve and meet HSE requirements of our clients in both Public as well as Private sectors during project implementation.</p>
+      <div class="achievement-highlight">
+        <svg data-lucide="shield-check" style="color:#FF6B00; width:40px; height:40px; flex-shrink:0;"></svg>
+        <div>
+          <h4>3,633,333 Man Hours</h4>
+          <p>Lost Time Accident Free (LTA Free) Site Management during past 15 years.</p>
+        </div>
+      </div>
+      <p>We are conscious of our responsibility towards mother earth and environment. We work in an environment while encouraging our employees to minimize use of paper and optimize carbon emission.</p>
+    </div>
+  </section>
+
+  <section class="iso-safety">
+    <div class="iso-content">
+      <div class="iso-brand">
+        <div class="safety-first-badge">SAFETY FIRST</div>
+      </div>
+      <div class="iso-text">
+        <p>Hi-Tech Constructions India Private Limited has adopted ISO 45001:2018 standards for International Organisation for Standardisation.</p>
+        <p>ISO 45001 provides organizations with a framework to manage risks, reduce workplace accidents, and demonstrate compliance with international safety standards.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ========================
+     CONTACT PAGE
+     ======================== -->
+<div id="page-contact" class="page">
+  <section class="profile-header" style="background:#eee;">
+    <h1 style="color:#14213d">Contact Us</h1>
+    <div class="decorative-line"><span class="line"></span><span class="square"></span><span class="line"></span></div>
+  </section>
+
+  <section class="contact-info-grid">
+    <div class="contact-block">
+      <svg data-lucide="phone" class="contact-icon"></svg>
+      <h3>Phone number</h3>
+      <p><strong>Delhi:</strong> +91 45520699, 45525648</p>
+      <p><strong>Gujarat:</strong> 026422-27323, 02642-245232</p>
+    </div>
+    <div class="contact-block">
+      <svg data-lucide="mail" class="contact-icon"></svg>
+      <h3>Email address</h3>
+      <p>delhi@acil.co.in</p>
+      <p>bharuch@acil.co.in</p>
+    </div>
+    <div class="contact-block">
+      <svg data-lucide="map-pin" class="contact-icon"></svg>
+      <h3>Address info</h3>
+      <p><strong>Head office:</strong> A3/22, 1st floor, Janakpuri, New Delhi-110058</p>
+    </div>
+  </section>
+
+  <section class="map-form-section">
+    <div class="location-container">
+      <div class="section-title-left">
+        <h2>LOCATION</h2>
+        <div class="decorative-line-left"><span class="square"></span><span class="line"></span></div>
+      </div>
+      <div class="map-wrapper">
+        <iframe title="Google Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.146608580556!2d77.08643537613045!3d28.625368384394015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04af08365267%3A0xc496667a42617f0b!2sA-3%2F22%2C%20Block%20A3%2C%20Janakpuri%2C%20New%20Delhi%2C%20Delhi%20110058!5e0!3m2!1sen!2sin!4v1709555000000!5m2!1sen!2sin"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+    <div class="enquiry-container">
+      <div class="section-title-left">
+        <h2>ENQUIRY FORM</h2>
+        <div class="decorative-line-left"><span class="square"></span><span class="line"></span></div>
+      </div>
+      <div class="form-notice-box">
+        <p style="color:#14213d">Please click the button below to fill out our enquiry form. It will open in a new tab.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSek_J_aFN-wsyE5zMwZ37Y4sOlABQYuTqxZfmDU-y3aQT17Yw/viewform"
+           target="_blank" rel="noopener noreferrer" class="btn-open-form">
+          Open Enquiry Form
+          <svg data-lucide="external-link" style="width:18px; height:18px;"></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ========================
+     FOOTER (shared)
+     ======================== -->
+<footer class="main-footer">
+  <section class="cta-banner">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h3>WE ARE READY TO BUILD YOUR DREAM — TELL US MORE ABOUT YOUR PROJECT</h3>
+        <p>Delivering quality, trust, and innovation in every project—your vision, our expertise.</p>
+      </div>
+      <button class="btn-cta" onclick="showPage('contact')">
+        CONTACT US <svg data-lucide="chevron-right" style="width:18px;height:18px;"></svg>
+      </button>
+    </div>
+  </section>
+
+  <div class="footer-body">
+    <div class="footer-grid">
+      <div class="footer-col about">
+        <h4 class="footer-title">ABOUT COMPANY</h4>
+        <div class="footer-line"><span></span></div>
+        <div class="footer-logo">Hi-Tech <span>CONSTRUCTION</span></div>
+        <p>Hi-Tech Construction stands for strength, reliability, and innovation. We build lasting structures, deliver quality projects on time, and create trust for communities across India.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">USEFUL LINKS</h4>
+        <div class="footer-line"><span></span></div>
+        <ul class="footer-links">
+          <li><svg data-lucide="chevron-right" style="width:14px;height:14px;"></svg> <a href="#" onclick="showPage('home')">Home</a></li>
+          <li><svg data-lucide="chevron-right" style="width:14px;height:14px;"></svg> <a href="#" onclick="showPage('profile')">About</a></li>
+          <li><svg data-lucide="chevron-right" style="width:14px;height:14px;"></svg> <a href="#" onclick="showPage('safety')">Safety</a></li>
+          <li><svg data-lucide="chevron-right" style="width:14px;height:14px;"></svg> <a href="#" onclick="showPage('services')">Services</a></li>
+          <li><svg data-lucide="chevron-right" style="width:14px;height:14px;"></svg> <a href="#" onclick="showPage('equipment')">Equipments</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">MORE LINKS</h4>
+        <div class="footer-line"><span></span></div>
+        <ul class="footer-links">
+          <li><svg data-lucide="chevron-right" style="width:14px;height:14px;"></svg> <a href="#">Career</a></li>
+          <li><svg data-lucide="chevron-right" style="width:14px;height:14px;"></svg> <a href="#" onclick="showPage('profile')">Company Profile</a></li>
+          <li><svg data-lucide="chevron-right" style="width:14px;height:14px;"></svg> <a href="#" onclick="showPage('current-projects')">Current Projects</a></li>
+          <li><svg data-lucide="chevron-right" style="width:14px;height:14px;"></svg> <a href="#">Privacy Policy</a></li>
+          <li><svg data-lucide="chevron-right" style="width:14px;height:14px;"></svg> <a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">NEWSLETTER</h4>
+        <div class="footer-line"><span></span></div>
+        <div class="newsletter-box">
+          <input type="email" placeholder="ENTER YOUR EMAIL" />
+          <button type="button"><svg data-lucide="send" style="width:18px;height:18px;color:white;"></svg></button>
+        </div>
+        <h4 class="footer-title social-title">SOCIAL LINKS</h4>
+        <div class="footer-line"><span></span></div>
+        <div class="social-icons">
+          <a href="#"><svg data-lucide="facebook"></svg></a>
+          <a href="#"><svg data-lucide="twitter"></svg></a>
+          <a href="#"><svg data-lucide="linkedin"></svg></a>
+          <a href="#"><svg data-lucide="youtube"></svg></a>
+          <a href="#"><svg data-lucide="instagram"></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-contact-info">
+      <div class="info-box">
+        <svg data-lucide="map-pin" class="info-icon"></svg>
+        <div><h5>ADDRESS</h5><p>A3/22, 1st Floor, Janakpuri, New Delhi-110058</p></div>
+      </div>
+      <div class="info-box">
+        <svg data-lucide="phone" class="info-icon"></svg>
+        <div><h5>PHONE</h5><p>011 45 525 648<br/>011 45 520 699</p></div>
+      </div>
+      <div class="info-box">
+        <svg data-lucide="mail" class="info-icon"></svg>
+        <div><h5>EMAIL</h5><p>delhi@acil.co.in</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright-bar">
+    <p>© 2026 Hi-Tech Construction India. All Rights Reserved. Powered by <span>Hi-TechC</span></p>
+  </div>
+  <div class="hazard-strip"></div>
+</footer>
+
+<script>
+  // ========================
+  // LUCIDE ICONS INIT
+  // ========================
+  lucide.createIcons();
+
+  // ========================
+  // PAGE ROUTING
+  // ========================
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    const target = document.getElementById('page-' + pageId);
+    if (target) {
+      target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    // Close mobile menu
+    document.getElementById('navMenu').classList.remove('open');
+    // Re-init icons for newly shown page
+    lucide.createIcons();
+  }
+
+  // ========================
+  // MOBILE MENU
+  // ========================
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('open');
+  }
+
+  // ========================
+  // HERO SLIDER
+  // ========================
+  const slides = [
+    { url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070", title: "SOLUTIONS FOR CONSTRUCTION", subtitle: "WELCOME TO Hi-Tech CONSTRUCTION" },
+    { url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070", title: "INNOVATIVE TECHNOLOGY", subtitle: "BUILDING THE FUTURE" },
+    { url: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecb?q=80&w=2070", title: "PREMIUM CIVIL WORKS", subtitle: "PROTECTING YOUR STRUCTURES" }
+  ];
+  let currentSlide = 0;
+
+  function renderSlide(idx) {
+    const hero = document.getElementById('heroSection');
+    const subtitle = document.getElementById('heroSubtitle');
+    const titleEl = document.getElementById('heroTitle');
+    hero.style.backgroundImage = `url(${slides[idx].url})`;
+    subtitle.textContent = slides[idx].subtitle;
+    const words = slides[idx].title.split(' ');
+    titleEl.innerHTML = words[0] + '<br/><span class="highlight">' + words.slice(1).join(' ') + '</span>';
+    document.querySelectorAll('#slideDots .dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+  }
+
+  function buildDots() {
+    const dotsEl = document.getElementById('slideDots');
+    slides.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.className = 'dot' + (i === 0 ? ' active' : '');
+      dot.onclick = () => { currentSlide = i; renderSlide(i); };
+      dotsEl.appendChild(dot);
+    });
+  }
+
+  buildDots();
+  renderSlide(0);
+  setInterval(() => { currentSlide = (currentSlide + 1) % slides.length; renderSlide(currentSlide); }, 5000);
+
+  // ========================
+  // PROJECT SLIDER
+  // ========================
+  let projectIndex = 0;
+  const totalProjects = 4;
+  const visibleCards = () => window.innerWidth < 600 ? 1 : window.innerWidth < 992 ? 2 : 3;
+
+  function updateProjectSlider() {
+    const track = document.getElementById('projectTrack');
+    const cardWidthPct = 100 / visibleCards();
+    // gap is 25px, adjust offset
+    const offset = projectIndex * (cardWidthPct / visibleCards() * 100 / (100/visibleCards()));
+    track.style.transform = `translateX(-${projectIndex * (100 / (visibleCards() === 3 ? 3.1 : visibleCards()))}%)`;
+    document.querySelectorAll('#projectDots .dot').forEach((d, i) => d.classList.toggle('active', i === (projectIndex > 0 ? 1 : 0)));
+  }
+
+  function nextProject() {
+    const max = totalProjects - visibleCards();
+    projectIndex = projectIndex >= max ? 0 : projectIndex + 1;
+    updateProjectSlider();
+  }
+
+  function prevProject() {
+    const max = totalProjects - visibleCards();
+    projectIndex = projectIndex === 0 ? max : projectIndex - 1;
+    updateProjectSlider();
+  }
+
+  function goToProject(idx) { projectIndex = idx; updateProjectSlider(); }
+
+  // ========================
+  // FAQ TOGGLE
+  // ========================
+  function toggleFaq(el) {
+    const isOpen = el.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(f => {
+      f.classList.remove('open');
+      f.querySelector('.faq-question span').textContent = '+';
+    });
+    if (!isOpen) {
+      el.classList.add('open');
+      el.querySelector('.faq-question span').textContent = '−';
+    }
+  }
+  // Set initial open state
+  document.querySelectorAll('.faq-item.open').forEach(el => {
+    el.querySelector('.faq-question span').textContent = '−';
+  });
+
+  // ========================
+  // CLIENT LIST
+  // ========================
+  const clients = [
+    "SHUBHAM CHEMICALS & SOLVENTS LTD.","SPS Construction India Pvt. Ltd.","SEABIRD MARINE",
+    "PAREKH GROUP","COCA COLA","OKAYA","MICROTEK","JAYPEE Group","MJ Logistic Services LTD", "VIVO"
+  ];
+  const grid = document.getElementById('clientGrid');
+  clients.forEach(c => {
+    const div = document.createElement('div');
+    div.className = 'client-list-item';
+    div.innerHTML = '<span class="bullet">▶</span> ' + c;
+    grid.appendChild(div);
+  });
+</script>
+</body>
+</html>
